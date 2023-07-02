@@ -34,12 +34,12 @@
                                 class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]">
                         </div>
                         <div class="">
-                            <input type="date" id="dob" placeholder="DOB"
+                          <label for="DOB">DOB </label>  <input type="date" name="DOB" id="dob"  max="2005-06-30" placeholder="DOB"
                                 class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]">
     
                     </div>
                     <div class="">
-                        <input type="email" id="email" placeholder="Email Id"
+                        <input type="email" id="email" placeholder="Email Id" 
                             class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]">
 
                 </div>
@@ -122,7 +122,7 @@ var password=document.getElementById("password").value;
 
 const db=getDatabase(app)
 
-set( ref(db, 'user/'+document.getElementById("name").value),
+set( ref(db, '/user/'+document.getElementById("name").value),
 {
   name: document.getElementById("name").value,
   password: document.getElementById("password").value,
